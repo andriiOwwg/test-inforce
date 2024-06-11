@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lPtyBO5i3h7j38/Jfu5UHjfmC5a+it0tQbFotNQ+4ijJ0LPmTXNL8dmFE+nI2YTH073gfzD0ealfPqUcZNEB8A==",
+  "success": true,
+  "projectFilePath": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Shared/Inforce.Shared.csproj",
+  "expectedPackageFiles": [
+    "/Users/andrew/.nuget/packages/dapper/2.0.78/dapper.2.0.78.nupkg.sha512",
+    "/Users/andrew/.nuget/packages/dapper.contrib/2.0.78/dapper.contrib.2.0.78.nupkg.sha512"
+  ],
+  "logs": []
+}
