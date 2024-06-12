@@ -12,33 +12,23 @@ namespace Inforce.Persistence.Contexts.Configurations
             builder.Property(u => u.Id)
                 .IsRequired()
                 .ValueGeneratedOnAdd();
-            
-            builder.Property(u => u.FirstName)
-                .IsRequired()
-                .HasColumnType("TEXT");
-            
-            builder.Property(u => u.LastName)
-                .IsRequired()
-                .HasColumnType("TEXT");
-            
-            builder.Property(u => u.UserSurname)
+
+            builder.Property(u => u.Name)
                 .IsRequired()
                 .HasColumnType("TEXT");
 
-
-            builder.Property(u => u.AccountStatusId)
+            builder.Property(u => u.Email)
+                .IsRequired()
                 .HasColumnType("TEXT");
 
-
-            builder.Property(u => u.AccountStatus)
+            builder.Property(u => u.Password)
                 .IsRequired()
-                .HasColumnType("INTEGER");
-
+                .HasColumnType("TEXT");
 
             builder.Property(u => u.CreationDate)
                 .IsRequired()
                 .HasColumnType("TEXT");
-            
+
         }
     }
 }

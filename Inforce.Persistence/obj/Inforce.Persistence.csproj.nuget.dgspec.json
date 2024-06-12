@@ -1,38 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Persistence/Inforce.Persistence.csproj": {}
+    "C:\\Users\\makan\\p\\test-inforce\\Inforce.Persistence\\Inforce.Persistence.csproj": {}
   },
   "projects": {
-    "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Persistence/Inforce.Persistence.csproj": {
+    "C:\\Users\\makan\\p\\test-inforce\\Inforce.Persistence\\Inforce.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Persistence/Inforce.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Persistence\\Inforce.Persistence.csproj",
         "projectName": "Inforce.Persistence",
-        "projectPath": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Persistence/Inforce.Persistence.csproj",
-        "packagesPath": "/Users/andrew/.nuget/packages/",
-        "outputPath": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Persistence/obj/",
+        "projectPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Persistence\\Inforce.Persistence.csproj",
+        "packagesPath": "C:\\Users\\makan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/andrew/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\makan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Repositories/Inforce.Repositories.csproj": {
-                "projectPath": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Repositories/Inforce.Repositories.csproj"
+              "C:\\Users\\makan\\p\\test-inforce\\Inforce.Repositories\\Inforce.Repositories.csproj": {
+                "projectPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Repositories\\Inforce.Repositories.csproj"
               },
-              "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Shared/Inforce.Shared.csproj": {
-                "projectPath": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Shared/Inforce.Shared.csproj"
+              "C:\\Users\\makan\\p\\test-inforce\\Inforce.Shared\\Inforce.Shared.csproj": {
+                "projectPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Shared\\Inforce.Shared.csproj"
               }
             }
           }
@@ -85,28 +89,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Repositories/Inforce.Repositories.csproj": {
+    "C:\\Users\\makan\\p\\test-inforce\\Inforce.Repositories\\Inforce.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Repositories/Inforce.Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Repositories\\Inforce.Repositories.csproj",
         "projectName": "Inforce.Repositories",
-        "projectPath": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Repositories/Inforce.Repositories.csproj",
-        "packagesPath": "/Users/andrew/.nuget/packages/",
-        "outputPath": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Repositories/obj/",
+        "projectPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Repositories\\Inforce.Repositories.csproj",
+        "packagesPath": "C:\\Users\\makan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Repositories\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/andrew/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\makan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -143,28 +151,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Shared/Inforce.Shared.csproj": {
+    "C:\\Users\\makan\\p\\test-inforce\\Inforce.Shared\\Inforce.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Shared/Inforce.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Shared\\Inforce.Shared.csproj",
         "projectName": "Inforce.Shared",
-        "projectPath": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Shared/Inforce.Shared.csproj",
-        "packagesPath": "/Users/andrew/.nuget/packages/",
-        "outputPath": "/Users/andrew/work/test-inforce/test-inforce-test_1/Inforce.Shared/obj/",
+        "projectPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Shared\\Inforce.Shared.csproj",
+        "packagesPath": "C:\\Users\\makan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/andrew/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\makan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -207,7 +219,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }

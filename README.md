@@ -16,3 +16,12 @@ Front-End
 Back-End 
 
 У нас є 5 основних проєктів, які між собою пов'язані. Основий це Inforce.Core, у ньому будуть знаходитися наші котроллери та відповідно Endpoints до фронту. Запускати потрібно наш основний проєкт, тобто Inforce.Core. Якщо потрібно робити якісь зміни з БД то міграція повинна закидуватся в Inforce.Persistence. Це такі найосновніші моменти, далі просто ознайомлюєшся з структурою та в подальному можеш подивитися на мої комміти, щоб точно зрозуміти, як правильно і де що саме потрібно писати.
+
+
+terminal commands:
+dotnet watch run --project Inforce.Core
+
+migrations example:
+dotnet ef migrations add initial --project Inforce.Persistence
+dotnet ef migrations list --project Inforce.Persistence
+dotnet ef database update 20240612095026_InitialCreatetest --project Inforce.Persistence

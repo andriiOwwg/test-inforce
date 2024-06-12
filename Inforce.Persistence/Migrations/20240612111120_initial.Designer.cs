@@ -11,14 +11,39 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Inforce.Persistence.Migrations
 {
     [DbContext(typeof(PlatformDbContext))]
-    [Migration("20240611192754_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240612111120_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.20");
+
+            modelBuilder.Entity("Inforce.Shared.Entities.Url", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("CreatedBy")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LongUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ShortUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Urls");
+                });
 
             modelBuilder.Entity("Inforce.Shared.Entities.User", b =>
                 {
@@ -29,21 +54,18 @@ namespace Inforce.Persistence.Migrations
                     b.Property<int>("AccountStatus")
                         .HasColumnType("INTEGER");
 
-                    b.Property<Guid?>("AccountStatusId")
-                        .HasColumnType("TEXT");
-
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("FirstName")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("LastName")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("UserSurname")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

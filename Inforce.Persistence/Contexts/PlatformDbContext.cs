@@ -14,9 +14,8 @@ public class PlatformDbContext: DbContext
    /* protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlite("Data Source=db_context.db");
-    }
+    }*/
 
-    */
     public DbSet<User> Users { get; set; }
     
     public DbSet<Url> Urls { get; set; }
