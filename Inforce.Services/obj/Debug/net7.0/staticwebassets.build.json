@@ -1,42 +1,42 @@
 {
   "Version": 1,
-  "Hash": "7NR4eNeWhrYNdQhHBq3I9qHufdRXjnmrHVp4RSqlm+s=",
+  "Hash": "LVP0rv/GdbjXGCcN1ch7GQJiahb+eiWIOn8tjbi6Ri0=",
   "Source": "Inforce.Services",
   "BasePath": "_content/Inforce.Services",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Persistence/Inforce.Persistence.csproj",
+      "Identity": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Persistence\\Inforce.Persistence.csproj",
       "Version": 2,
       "Source": "Inforce.Persistence",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Repositories/Inforce.Repositories.csproj",
+      "Identity": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Repositories\\Inforce.Repositories.csproj",
       "Version": 2,
       "Source": "Inforce.Repositories",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Shared/Inforce.Shared.csproj",
+      "Identity": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Shared\\Inforce.Shared.csproj",
       "Version": 2,
       "Source": "Inforce.Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
