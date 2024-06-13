@@ -8,7 +8,7 @@ public class UserController : ControllerBase
 {
   private IUserService _UserService { get; set; }
 
-  public UserController(UserService userService)
+  public UserController(IUserService userService)
   {
     _UserService = userService;
   }

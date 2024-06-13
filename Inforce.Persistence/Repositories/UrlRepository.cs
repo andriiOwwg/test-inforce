@@ -17,7 +17,6 @@ public class UrlRepository: IUrlRepository
     public async Task CreateUrl(Url url)
     {
         await _DbContext.Urls.AddAsync(url);
-        
     }
 
     public async Task SaveChanges()

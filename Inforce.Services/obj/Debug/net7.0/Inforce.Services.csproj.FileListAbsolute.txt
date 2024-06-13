@@ -110,8 +110,6 @@
 /Users/andrew/work/test-inforce/test-inforce/Inforce.Services/obj/Debug/net7.0/Inforce.Services.pdb
 /Users/andrew/work/test-inforce/test-inforce/Inforce.Services/obj/Debug/net7.0/Inforce.Services.genruntimeconfig.cache
 /Users/andrew/work/test-inforce/test-inforce/Inforce.Services/obj/Debug/net7.0/ref/Inforce.Services.dll
-C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\appsettings.json
 C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Inforce.Persistence.deps.json
 C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Inforce.Persistence.runtimeconfig.json
 C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Inforce.Repositories.deps.json
@@ -121,6 +119,8 @@ C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Inforce.Shared.d
 C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Inforce.Shared.runtimeconfig.json
 C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Inforce.Shared.exe
 C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Inforce.Persistence.exe
+C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\appsettings.json
 C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Inforce.Services.exe
 C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Inforce.Services.deps.json
 C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Inforce.Services.runtimeconfig.json
