@@ -1,31 +1,31 @@
 {
   "Version": 1,
-  "Hash": "3ACexatclojVW2JiZrsKRtTNibUUB8OMgGcgsrz29sQ=",
+  "Hash": "/9YTjBlTYpctpCtWLSEXhntJVQpclQtk5OwSb2x3N30=",
   "Source": "Inforce.Persistence",
   "BasePath": "_content/Inforce.Persistence",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Repositories/Inforce.Repositories.csproj",
+      "Identity": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Repositories\\Inforce.Repositories.csproj",
       "Version": 2,
       "Source": "Inforce.Repositories",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Shared/Inforce.Shared.csproj",
+      "Identity": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Shared\\Inforce.Shared.csproj",
       "Version": 2,
       "Source": "Inforce.Shared",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],

@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/Inforce.Repositories.props" />
+  <Import Project="..\buildMultiTargeting\Inforce.Repositories.props" />
 </Project>
