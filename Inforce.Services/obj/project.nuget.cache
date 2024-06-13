@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hVVmxYifEwO+yXw8HCcBHUkwwQ+/hBL5hkU6509WoBFGvJuwYEbWlp4NcoA3ZhnrC1YRW1Qcg0rD7/e74Q47ig==",
+  "dgSpecHash": "iKJfLaf6rq/wXk1Ktty4fhHCmwt2j4Da79O7llxbyi3yavGcmB9tdSScjoEh7Jt4ygSsXvJ5c2i5orQmsT7q2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Services\\Inforce.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\makan\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\makan\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\makan\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\makan\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\makan\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\makan\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
     "C:\\Users\\makan\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
