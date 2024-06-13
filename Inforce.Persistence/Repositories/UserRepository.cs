@@ -19,18 +19,13 @@ public class UserRepository: IUserRepository
         await _context.SaveChangesAsync();
     }
 
-   public Task UpdateUser(User user)
-    {
-        throw new NotImplementedException();
-    }
-
-   public Task DeleteUser(Guid id)
-    {
-        throw new NotImplementedException();
-    }
-
     public Task<List<User>> GetUsers()
     {
         return _context.Users.ToListAsync();
+    }
+
+    public Task<User> GetUserByEmail(string email)
+    {
+        return _context.Users.FirstOrDefaultAsync(x => x.Email == email);
     }
 }

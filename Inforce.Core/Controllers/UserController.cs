@@ -26,4 +26,10 @@ public class UserController : ControllerBase
   {
       return await _UserService.GetUsers();
   }
+
+  [HttpPost("login")]
+  public async Task<UserModel> Login([FromBody] LoginModel body)
+  {
+    return await _UserService.Login(body);
+  }
 }

@@ -22,21 +22,27 @@ public class UserService: IUserService
         await _userRepository.CreateUser(newUser);
     }
 
-    public async Task UpdateUser(UserModel userModel)
-    {
-        var user = _Mapper.Map<User>(userModel);
-        await _userRepository.UpdateUser(user);
-    }
-
-    public async Task DeleteUser(Guid userId)
-    {
-        await _userRepository.DeleteUser(userId);
-    }
-
     public async Task<List<UserModel>> GetUsers()
     {
         var users = await _userRepository.GetUsers();
         
         return _Mapper.Map<List<UserModel>>(users);
+    }
+
+    public async Task<UserModel> Login(LoginModel login)
+    {
+        User user = await _userRepository.GetUserByEmail(login.Email);
+        
+        if (user == null)
+        {
+            throw new Exception("User not found.");
+        }
+
+        if (user.Password != login.Password)
+        {
+            throw new Exception("Invalid password.");
+        }
+
+        return _Mapper.Map<UserModel>(user);
     }
 }
