@@ -1,11 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.Extensions.Logging;
-using Inforce.Shared.Entities;
-using System.Linq;
-using System.Threading.Tasks;
-using Inforce.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using Inforce.Shared.Entities;
+using Inforce.Persistence.Contexts;
 using Inforce.Shared.Enums;
 
 namespace test_inforce_test_1.Controllers;
