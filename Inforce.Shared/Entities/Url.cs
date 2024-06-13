@@ -9,4 +9,6 @@ public class Url: BaseEntity
     public string ShortUrl { get; set; }
     
     public string LongUrl { get; set; }
+    
+    public bool Active { get; set; }
 }

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Inforce.Persistence.Migrations
 {
     [DbContext(typeof(PlatformDbContext))]
-    [Migration("20240612111120_initial")]
-    partial class initial
+    [Migration("20240612212136_AddUrlActiveEntity")]
+    partial class AddUrlActiveEntity
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,6 +25,9 @@ namespace Inforce.Persistence.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("Active")
+                        .HasColumnType("INTEGER");
 
                     b.Property<Guid>("CreatedBy")
                         .HasColumnType("TEXT");

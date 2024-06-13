@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "yOBFFu8k4z04DVdGUcjta+FeAQMzVb/OWtNg4uWnLNFeb6QTVPJPiZcVE2phHuq5mTUnvk++5QBw9MCE5SCcyw==",
+  "dgSpecHash": "CZfQBG+jP1hC4KUdaufnRXOLNQJJBzlbRk3d6CpzSXprKJA0PU0SARm0tNhuXrrXTKeMQ7DGW3d8qmi2LPI8XQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Shared\\Inforce.Shared.csproj",
+  "projectFilePath": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Shared/Inforce.Shared.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\makan\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
-    "C:\\Users\\makan\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512"
+    "/Users/andrew/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/andrew/.nuget/packages/dapper/2.0.78/dapper.2.0.78.nupkg.sha512",
+    "/Users/andrew/.nuget/packages/dapper.contrib/2.0.78/dapper.contrib.2.0.78.nupkg.sha512",
+    "/Users/andrew/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/andrew/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/andrew/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/Users/andrew/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
