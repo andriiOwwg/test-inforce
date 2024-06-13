@@ -13,7 +13,7 @@ public class UserController : ControllerBase
     _UserService = userService;
   }
 
-  [HttpPost(Name = "Register")]
+  [HttpPost("Register")]
   public async Task<IActionResult> Register([FromBody] UserModel body)
   {
     await _UserService.CreateUser(body);
