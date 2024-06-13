@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.35.0": {
         "type": "package",
         "dependencies": {
@@ -1425,10 +1441,28 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Inforce.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Inforce.Persistence": "1.0.0",
+          "Inforce.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Inforce.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Inforce.Services.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Inforce.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Dapper.Contrib": "2.0.78"
         },
         "compile": {
@@ -1444,6 +1478,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Azure.Core/1.35.0": {
       "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
       "type": "package",
@@ -3823,6 +3872,11 @@
       "path": "../Inforce.Repositories/Inforce.Repositories.csproj",
       "msbuildProject": "../Inforce.Repositories/Inforce.Repositories.csproj"
     },
+    "Inforce.Services/1.0.0": {
+      "type": "project",
+      "path": "../Inforce.Services/Inforce.Services.csproj",
+      "msbuildProject": "../Inforce.Services/Inforce.Services.csproj"
+    },
     "Inforce.Shared/1.0.0": {
       "type": "project",
       "path": "../Inforce.Shared/Inforce.Shared.csproj",
@@ -3831,8 +3885,10 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "AutoMapper >= 13.0.1",
       "Inforce.Persistence >= 1.0.0",
       "Inforce.Repositories >= 1.0.0",
+      "Inforce.Services >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.20",
@@ -3841,42 +3897,40 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\makan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/andrew/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Core\\Inforce.Core.csproj",
+      "projectUniqueName": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Core/Inforce.Core.csproj",
       "projectName": "Inforce.Core",
-      "projectPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Core\\Inforce.Core.csproj",
-      "packagesPath": "C:\\Users\\makan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Core\\obj\\",
+      "projectPath": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Core/Inforce.Core.csproj",
+      "packagesPath": "/Users/andrew/.nuget/packages/",
+      "outputPath": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Core/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\makan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/andrew/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\makan\\p\\test-inforce\\Inforce.Persistence\\Inforce.Persistence.csproj": {
-              "projectPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Persistence\\Inforce.Persistence.csproj"
+            "/Users/andrew/work/test-inforce/test-inforce/Inforce.Persistence/Inforce.Persistence.csproj": {
+              "projectPath": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Persistence/Inforce.Persistence.csproj"
             },
-            "C:\\Users\\makan\\p\\test-inforce\\Inforce.Repositories\\Inforce.Repositories.csproj": {
-              "projectPath": "C:\\Users\\makan\\p\\test-inforce\\Inforce.Repositories\\Inforce.Repositories.csproj"
+            "/Users/andrew/work/test-inforce/test-inforce/Inforce.Repositories/Inforce.Repositories.csproj": {
+              "projectPath": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Repositories/Inforce.Repositories.csproj"
+            },
+            "/Users/andrew/work/test-inforce/test-inforce/Inforce.Services/Inforce.Services.csproj": {
+              "projectPath": "/Users/andrew/work/test-inforce/test-inforce/Inforce.Services/Inforce.Services.csproj"
             }
           }
         }
@@ -3891,6 +3945,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.9, )"
@@ -3933,7 +3991,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
       }
     }
   }

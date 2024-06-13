@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Inforce.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class initial : Migration
+    public partial class AddUrlActiveEntity : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,6 +19,7 @@ namespace Inforce.Persistence.Migrations
                     CreatedBy = table.Column<Guid>(type: "TEXT", nullable: false),
                     ShortUrl = table.Column<string>(type: "TEXT", nullable: false),
                     LongUrl = table.Column<string>(type: "TEXT", nullable: false),
+                    Active = table.Column<bool>(type: "INTEGER", nullable: false),
                     CreationDate = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>

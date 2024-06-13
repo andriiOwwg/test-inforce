@@ -23,6 +23,9 @@ namespace Inforce.Persistence.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("Active")
+                        .HasColumnType("INTEGER");
+
                     b.Property<Guid>("CreatedBy")
                         .HasColumnType("TEXT");
 
