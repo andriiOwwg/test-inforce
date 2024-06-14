@@ -22,10 +22,6 @@ export class RegisterComponent {
     password: new FormControl('', Validators.required),
   });
 
-  // username = this.registerForm.get('username')?.value ?? '';
-  // email = this.registerForm.get('email')?.value ?? '';
-  // password = this.registerForm.get('password')?.value ?? '';
-
   constructor(private authService: AuthService) {}
 
   handleSubmit() {

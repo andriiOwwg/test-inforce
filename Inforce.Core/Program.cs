@@ -4,6 +4,23 @@ using test_inforce_test_1.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllCors", builder =>
+    {
+        builder
+            .WithOrigins()
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials()
+            .SetIsOriginAllowedToAllowWildcardSubdomains()
+            .SetIsOriginAllowed(delegate (string requestingOrigin)
+            {
+                return true;
+            }).Build();
+    });
+});
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -21,6 +38,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("AllowAllCors");
 
 app.UseHttpsRedirection();
 
