@@ -17,8 +17,7 @@ public class UserService: IUserService
     public async Task CreateUser(UserModel user)
     {
         User newUser = _Mapper.Map<User>(user);
-        newUser.AccountStatus = AccountStatus.User;
-        newUser.Password = user.Password;
+
         await _userRepository.CreateUser(newUser);
     }
 
