@@ -1,0 +1,53 @@
+# Ignore .NET build directories
+bin/
+obj/
+
+# Rider project files
+**/rider.project.model.nuget.info
+**/rider.project.restore.info
+**/*.AssemblyReference.cache
+**/project.packagespec.json
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Rider directories
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotNet local tools
+.localtoolmanifest.json
+
+# NCrunch
+.ncrunchsolution
+
+# Mac cache files
+.DS_Store
+
+# Windows shortcut files
+*.lnk
+
+# Ignore secrets.json, commonly used for storing sensitive information in ASP.NET Core
+secrets.json
