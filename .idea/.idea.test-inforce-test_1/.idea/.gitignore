@@ -11,3 +11,27 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+bin/
+obj/
+**/rider.project.model.nuget.info
+**/rider.project.restore.info
+**/*.AssemblyReference.cache
+**/project.packagespec.json
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+mono_crash.*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.vscode/
+.idea/
+ScaffoldingReadMe.txt
+.localtoolmanifest.json
+.ncrunchsolution
+.DS_Store
+*.lnk
+secrets.json

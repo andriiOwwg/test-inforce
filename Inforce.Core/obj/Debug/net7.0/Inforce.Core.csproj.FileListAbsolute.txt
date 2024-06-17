@@ -391,3 +391,4 @@ C:\Users\makan\p\test-inforce\Inforce.Core\obj\Debug\net7.0\refint\Inforce.Core.
 C:\Users\makan\p\test-inforce\Inforce.Core\obj\Debug\net7.0\Inforce.Core.pdb
 C:\Users\makan\p\test-inforce\Inforce.Core\obj\Debug\net7.0\Inforce.Core.genruntimeconfig.cache
 C:\Users\makan\p\test-inforce\Inforce.Core\obj\Debug\net7.0\ref\Inforce.Core.dll
+C:\Users\makan\p\test-inforce\Inforce.Core\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

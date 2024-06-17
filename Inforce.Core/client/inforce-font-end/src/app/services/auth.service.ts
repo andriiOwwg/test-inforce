@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, config } from 'rxjs';
+import {environment} from "../../enviroments/enviroment";
 
 @Injectable({
   providedIn: 'root',
@@ -12,7 +13,7 @@ export class AuthService {
   register(username: string, email: string, password: string): boolean {
     const body = { username, email, password };
     const response = this.http
-      .post(`${this.UserURL}/Register`, body)
+      .post(`${environment.apiUrl}/User/Register`, body)
       .subscribe({
         // next: (response) => {
         //   localStorage.setItem('token', 'response.token');
@@ -31,7 +32,7 @@ export class AuthService {
 
   login(email: string, password: string): boolean {
     const body = { email, password };
-    const response = this.http.post(`${this.UserURL}/login`, body).subscribe({
+    const response = this.http.post(`${environment.apiUrl}/User/login`, body).subscribe({
       next: (response) => {
         localStorage.setItem('token', 'response.token');
       },

@@ -222,3 +222,4 @@ C:\Users\makan\p\test-inforce\Inforce.Services\obj\Debug\net7.0\refint\Inforce.S
 C:\Users\makan\p\test-inforce\Inforce.Services\obj\Debug\net7.0\Inforce.Services.pdb
 C:\Users\makan\p\test-inforce\Inforce.Services\obj\Debug\net7.0\Inforce.Services.genruntimeconfig.cache
 C:\Users\makan\p\test-inforce\Inforce.Services\obj\Debug\net7.0\ref\Inforce.Services.dll
+C:\Users\makan\p\test-inforce\Inforce.Services\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
