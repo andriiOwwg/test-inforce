@@ -8,12 +8,13 @@ import {
   Validators,
 } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import {MainFormComponent} from "../../main-form/main-form.component";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, RouterLink],
+  imports: [ReactiveFormsModule, CommonModule, RouterLink, MainFormComponent],
 })
 export class LoginComponent {
   loginForm = new FormGroup({
