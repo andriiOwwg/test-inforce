@@ -1,11 +1,13 @@
 using Inforce.Persistence.Contexts.Configurations;
 using Inforce.Shared.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
 namespace Inforce.Persistence.Contexts;
 
-public class PlatformDbContext: DbContext
+public class PlatformDbContext: IdentityDbContext<IdentityUser>
 {
     public PlatformDbContext(DbContextOptions<PlatformDbContext> options) : base(options)
     {
