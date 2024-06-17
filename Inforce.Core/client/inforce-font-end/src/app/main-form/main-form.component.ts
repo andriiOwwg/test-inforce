@@ -1,25 +1,31 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {NgClass} from "@angular/common";
+import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-main-form',
   standalone: true,
   imports: [
-    NgClass
+    NgClass,
+    ReactiveFormsModule
   ],
   templateUrl: './main-form.component.html',
-  styleUrl: './main-form.component.scss'
+  styleUrl: './main-form.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MainFormComponent implements OnInit{
-  @Input() labelText: string = '';
-  @Input() for: string = '';
-  @Input() classList: string = '';
+  @Input() label: string = '';
+  @Input() type: string = 'text';
+  @Input() controlName: string = '';
+  @Input() formGroup!: FormGroup;
+
+  get formControl(): FormControl {
+    return this.formGroup.controls[this.controlName] as FormControl;
+  }
 
   ngOnInit() {
 
-    console.log(this.labelText);
-    console.log(this.for);
-    console.log(this.classList);
-
+    console.log(this.label);
+    console.log(this.controlName);
   }
 }
