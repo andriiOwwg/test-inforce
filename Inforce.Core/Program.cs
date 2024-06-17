@@ -5,6 +5,8 @@ using test_inforce_test_1.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.AspNetCore.Identity;
+using Inforce.Persistence.Contexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +35,17 @@ builder.Services.AddServices();
 builder.Services.AddDbAndIdentity();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
+builder.Services.AddDefaultIdentity<IdentityUser>(
+    options => {
+        options.SignIn.RequireConfirmedAccount = false;
+        options.Password.RequireDigit = false;
+        options.Password.RequireLowercase = false;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequireUppercase = false;
+    }
+    )
+    .AddEntityFrameworkStores<PlatformDbContext>();
+    
 builder.Services.AddAuthentication(options => {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -51,7 +64,6 @@ builder.Services.AddAuthentication(options => {
         ValidateLifetime = true
     };
 });
-})
 
 var app = builder.Build();
 
@@ -65,6 +77,7 @@ app.UseCors("AllowAllCors");
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
