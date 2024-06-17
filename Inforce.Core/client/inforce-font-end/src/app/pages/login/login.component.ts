@@ -1,20 +1,25 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
-import { AuthService } from '../../services/auth.service';
 import {
   FormControl,
   FormGroup,
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import {MainFormComponent} from "../../main-form/main-form.component";
+import { Router, RouterLink } from '@angular/router';
+import { LabelInputComponent } from '../../components/label-input/label-input.component';
+import { AuthService } from '../../services/auth.service';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, RouterLink, MainFormComponent],
+  imports: [
+    ReactiveFormsModule,
+    RouterLink,
+    LabelInputComponent,
+    ButtonComponent,
+  ],
 })
 export class LoginComponent {
   loginForm = new FormGroup({

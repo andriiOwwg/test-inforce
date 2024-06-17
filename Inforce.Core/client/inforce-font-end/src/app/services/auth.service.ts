@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, config } from 'rxjs';
-import {environment} from "../../enviroments/enviroment";
+import { environment } from '../../enviroments/enviroment';
 
 @Injectable({
   providedIn: 'root',
@@ -10,14 +10,14 @@ export class AuthService {
   private UserURL = 'http://localhost:5097/User';
   constructor(private http: HttpClient) {}
 
-  register(username: string, email: string, password: string): boolean {
-    const body = { username, email, password };
+  register(name: string, email: string, password: string): boolean {
+    const body = { name, email, password };
     const response = this.http
       .post(`${environment.apiUrl}/User/Register`, body)
       .subscribe({
-        // next: (response) => {
-        //   localStorage.setItem('token', 'response.token');
-        // },
+        next: (response) => {
+          localStorage.setItem('token', 'response.token');
+        },
         error: (error) => {
           console.error('Registration failed', error);
         },
@@ -25,25 +25,25 @@ export class AuthService {
           console.log('Registration request completed');
         },
       });
-    console.log(body, 'in register');
     console.log(response, 'in register');
     return true;
   }
 
   login(email: string, password: string): boolean {
     const body = { email, password };
-    const response = this.http.post(`${environment.apiUrl}/User/login`, body).subscribe({
-      next: (response) => {
-        localStorage.setItem('token', 'response.token');
-      },
-      error: (error) => {
-        console.error('Login failed', error);
-      },
-      complete: () => {
-        console.log('Login request completed');
-      },
-    });
-    console.log(response, 'in login');
+    const response = this.http
+      .post(`${environment.apiUrl}/User/login`, body)
+      .subscribe({
+        next: (response) => {
+          localStorage.setItem('token', 'response.token');
+        },
+        error: (error) => {
+          console.error('Login failed', error);
+        },
+        complete: () => {
+          console.log('Login request completed');
+        },
+      });
     return true;
   }
 
