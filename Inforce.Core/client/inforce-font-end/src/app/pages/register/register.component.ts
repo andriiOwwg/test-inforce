@@ -8,16 +8,24 @@ import {
 } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
 import { RouterLink } from '@angular/router';
+import { LabelInputComponent } from '../../components/label-input/label-input.component';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, RouterLink],
+  imports: [
+    ReactiveFormsModule,
+    CommonModule,
+    RouterLink,
+    LabelInputComponent,
+    ButtonComponent,
+  ],
   selector: 'app-register',
   templateUrl: './register.component.html',
 })
 export class RegisterComponent {
   registerForm = new FormGroup({
-    username: new FormControl('', Validators.required),
+    name: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', Validators.required),
   });
@@ -29,10 +37,10 @@ export class RegisterComponent {
   }
 
   register() {
-    const username = this.registerForm.get('username')?.value ?? '';
+    const name = this.registerForm.get('name')?.value ?? '';
     const email = this.registerForm.get('email')?.value ?? '';
     const password = this.registerForm.get('password')?.value ?? '';
 
-    this.authService.register(username, email, password);
+    this.authService.register(name, email, password);
   }
 }
