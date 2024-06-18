@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using test_inforce_test_1.Configurations;
 using Inforce.Shared.Models.DTOs;
+using test_inforce_test_1.Helpers;
 
 namespace test_inforce_test_1.Controllers;
 
@@ -11,18 +12,18 @@ namespace test_inforce_test_1.Controllers;
 public class UserController : ControllerBase
 {
   private readonly UserManager<IdentityUser> _userManager;
-  private readonly JwtConfig _jwtConfig;
-  private IUserService _UserService { get; set; }
+  private IUserService UserService { get; set; }
+  private JwtGenerator JwtGenerator { get; set; }
 
   public UserController(
+    JwtGenerator jwtGenerator,
     UserManager<IdentityUser> userManager,
-    IOptionsMonitor<JwtConfig> _optionsMonitor,
     IUserService userService
   )
   {
     _userManager = userManager;
-    _jwtConfig = _optionsMonitor.CurrentValue;
-    _UserService = userService;
+    UserService = userService;
+    JwtGenerator = jwtGenerator;
   }
 
   [HttpPost("Register")]
@@ -43,20 +44,25 @@ public class UserController : ControllerBase
 
     if (!isCreated.Succeeded) return BadRequest("Not able to register user. DB error.");
 
-    // TODO: generate token
+    var token = JwtGenerator.GenerateJwtToken(user);
 
-    return Ok("User registered successfully.");
+    return Ok(new RegistrationResponse()
+    {
+      Result = true,
+      Token = token
+      });
   }
 
   [HttpGet("All")]
   public async Task<List<UserModel>> GetUsers()
   {
-      return await _UserService.GetUsers();
+      return await UserService.GetUsers();
   }
 
   [HttpPost("login")]
   public async Task<UserModel> Login([FromBody] LoginModel body)
   {
-    return await _UserService.Login(body);
+    return await UserService.Login(body);
   }
+
 }

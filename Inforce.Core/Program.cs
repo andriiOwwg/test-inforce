@@ -1,6 +1,5 @@
 using Inforce.Persistence.DependencyInjection;
 using Inforce.Services.DependencyInjection;
-using Microsoft.Extensions.Options;
 using test_inforce_test_1.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
